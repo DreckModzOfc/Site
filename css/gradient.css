@@ -1,0 +1,46 @@
+@property --color_1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #FFFFFF;
+}
+
+@property --color_2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #787878;
+}
+
+.gradient-text {
+    transition: --color_1 0.5s, --color_2 0.5s;
+    text-align: center;
+    background-image: linear-gradient(to top right, var(--color_1) 0%, var(--color_2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    user-select: none;
+    font-weight: 600;
+}
+
+.gradient-icon {
+    transition: --color_1 0.5s, --color_2 0.5s;
+    text-align: center;
+    background-image: linear-gradient(to top right, var(--color_1) 0%, var(--color_2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    user-select: none;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    0%, 100% {
+        --color_1: #FFFFFF;
+        --color_2: #787878;
+    }
+    50% {
+        --color_1:#787878;
+        --color_2: #FFFFFF;
+    }
+}

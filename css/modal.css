@@ -1,0 +1,243 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: var(--rich-black-5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid transparent !important;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.modal .modal-container {
+    max-width: 1200px;
+    min-width: 450px;
+    max-height: 1000px;
+    width: auto;
+    height: auto;
+    animation-delay: 1s;
+    animation: fade-in 300ms forwards;
+    color: var(--baby-powder);
+    background-color: var(--white-6);
+    border-radius: 1em;
+    -webkit-box-shadow: inset 0px 100px 100px -20px var(--rich-black);
+    -moz-box-shadow: inset 0px 100px 100px -20px var(--rich-black);
+    box-shadow: inset 0px 100px 100px -20px var(--rich-black);
+    border: .5px solid var(--white-6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.modal .modal-container .modal-content {
+    width: 100%;
+    height: 100%;
+    padding: 60px 40px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.modal .modal-container .modal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: var(--bg-color, var(--neutral));
+    border: .5px solid var(--rich-black-5);
+}
+
+.modal .modal-container .modal-content .modal-title {
+    font-size: 30px;
+    user-select: none;
+}
+
+.modal .modal-container .modal-content .modal-description {
+    font-size: 15px;
+    color: var(--neutral);
+    user-select: none;
+}
+
+.modal .modal-container .modal-content .modal-description span {
+    color: var(--baby-powder);
+    font-weight: 550;
+}
+
+.modal .modal-container .modal-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .modal-container .modal-form form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal .modal-container .modal-form form input {
+    padding: 15px;
+    width: auto;
+    min-width: 80%;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: var(--baby-powder);
+    background-color: var(--white-8);
+    box-shadow: inset 0 0 1.3em var(--rich-black);
+    border: .5px solid var(--white-6);
+    transition: 300ms;
+}
+
+.modal .modal-container .modal-form form input[readonly] {
+    cursor: pointer;
+}
+
+.modal .modal-container .modal-form form input:not([readonly]):focus {
+    box-shadow: inset 0 0 1em var(--rich-black);
+}
+
+.modal .modal-container .modal-form form input:focus {
+    outline: none;
+}
+
+.modal .modal-container .modal-choice {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .modal-container .modal-choice .modal-choices {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-items: center;
+}
+
+.modal .modal-container .modal-choice .modal-choices .choice {
+    padding: 15px;
+    width: 100%;
+    height: 100%; 
+    min-width: 130px;
+    aspect-ratio: 1; 
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: var(--baby-powder);
+    background-color: var(--white-8);
+    box-shadow: inset 0 0 2.5em var(--rich-black);
+    border: 0.3px solid var(--white-6);
+    transition: 300ms;
+}
+
+.modal .modal-container .modal-choice .modal-choices .choice:hover {
+    transform: scale(1.1);
+    box-shadow: inset 0 0 2em var(--rich-black);
+}
+
+.modal .modal-container .modal-choice .modal-choices .choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal .modal-container .modal-choice .modal-choices .choice img {
+    max-width: 150px;
+}
+
+.modal .modal-container .modal-choice .modal-choices .choice i {
+    font-size: 75px;
+    margin-bottom: 5px;
+    max-width: 150px;
+}
+
+.modal .modal-container .modal-choice .modal-choices .choice .choice-label {
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+}
+
+.modal .modal-container .modal-bottom {
+    min-height: 75px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rich-black-5);
+    backdrop-filter: blur(30px);
+    color: var(--baby-powder);
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.modal .modal-container .modal-buttons {
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.modal .modal-container .modal-buttons .modal-button {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    color: var(--baby-powder);
+    background-color: var(--white-8);
+    box-shadow: inset 0 0 1.3em var(--rich-black);
+    border: .5px solid var(--white-6);
+    transition: 300ms;
+    cursor: pointer;
+    user-select: none;
+}
+
+.modal .modal-container .modal-buttons .modal-button:hover {
+    transform: scale(1.1);
+}
+
+.modal .modal-container .modal-buttons .modal-button:hover,
+.modal .modal-container .modal-buttons .modal-button:active {
+    box-shadow: inset 0 0 1em var(--rich-black);
+}
+
+.modal .modal-container .modal-buttons .modal-button:active {
+    transform: scale(1.2);
+}
+
+.modal::placeholder {
+    color: var(--baby-powder);
+}
+
+::selection {
+    background-color: var(--neutral);
+}

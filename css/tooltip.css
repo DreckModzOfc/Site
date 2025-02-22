@@ -1,0 +1,69 @@
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.tooltip::after {
+    content: attr(tooltip);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s;
+    position: absolute;
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: var(--tooltip-color, black);
+    bottom: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    padding: 6px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+.tooltip:hover::after,
+.tooltip:hover::before {
+    visibility: visible;
+    opacity: 100;
+    transform: scale(2);
+}
+
+.small-tooltip {
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.small-tooltip::after {
+    content: attr(tooltip);
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s;
+    position: absolute;
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: var(--tooltip-color, black);
+    bottom: calc(100% + 4px);
+    transform: translateX(-50%);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    font-size: 8px;
+    font-family: monospace;
+}
+
+.small-tooltip:hover::after,
+.small-tooltip:hover::before {
+    visibility: visible;
+    opacity: 100;
+    transform: scale(2);
+}

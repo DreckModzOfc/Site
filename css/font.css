@@ -1,0 +1,118 @@
+﻿@import url('../css2');
+@import url('../css2-1');
+@import url('../css2-2');
+@import url('../css2-3');
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2') format('woff2'),
+         url('../fonts/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff') format('woff'),
+         url('../fonts/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+.font-roboto {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-satoshi {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-kaushan {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.font-bricolage {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
+.white {
+    color: white !important;
+}
+
+.black {
+    color: black !important;
+}
+
+/* Font weights */
+
+.font-weight-thin {
+    font-weight: 200;
+}
+
+.font-weight-normal {
+    font-weight: 400;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-ultra {
+    font-weight: 900;
+}
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-style-oblique {
+    font-style: oblique;
+}
+
+.font-size-small {
+    font-size: 15px;
+}
+
+.font-size-normal {
+    font-size: 20px;
+}
+
+.font-size-big {
+    font-size: 25px;
+}
+
+.font-size-large {
+    font-size: 30px;
+}
+
+.font-size-very-large {
+    font-size: 60px;
+}
+
+/* Text transform */
+
+.font-lowercase {
+    text-transform: lowercase;
+}
+
+.font-uppercase {
+    text-transform: uppercase;
+}

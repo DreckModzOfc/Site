@@ -1,0 +1,43 @@
+.display-text-align-center {
+    text-align: center;
+}
+
+.display-text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.display-flex-row {
+    --gap: var(--gap);
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap, 10px);
+}
+
+.display-flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap, 10px);
+}
+
+.display-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-flex-end {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

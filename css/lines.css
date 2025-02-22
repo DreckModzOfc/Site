@@ -1,0 +1,88 @@
+.lines-group {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: -1; 
+}
+  
+.line-vertical-left,
+.line-vertical-right {
+    background-color: var(--neutral--800);
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.line-vertical-left {
+    left: 0;
+}
+
+.line-vertical-right {
+    right: 0;
+}
+  
+.line-horizontal {
+    background-color: var(--neutral--800);
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.line-horizontal.top {
+    top: 0;
+}
+
+.line-horizontal.bottom {
+    bottom: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.line-dot {
+    border: 1px solid var(--neutral--800);
+    border-radius: 2px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: -1;
+}
+  
+.line-dot.bottom-left {
+    bottom: -5px;
+    left: -5px;
+}
+  
+.line-dot.bottom-right {
+    bottom: -5px;
+    right: -5px;
+}
+  
+.line-dot.top-left {
+    top: -5px;
+    left: -5px;
+}
+  
+.line-dot.top-right {
+    top: -5px;
+    right: -5px;
+}
+
+.line-effect {
+    background-color: var(--baby-powder);
+    width: var(--line-width, 40px);
+    height: 1px;
+    margin-top: -1px;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    right: auto;
+    -webkit-box-shadow: 0px 3px 50px 3px var(--baby-powder);
+    -moz-box-shadow: 0px 3px 50px 3px var(--baby-powder);
+    box-shadow: 0px 3px 50px 3px var(--baby-powder);
+}
